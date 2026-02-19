@@ -33,5 +33,18 @@
 
         <!-- Dev 2 -> add a dark mode button -->
          <button>Dark Mode</button>
+
+
+         <!-- Trunk-Based Development -->
+          <!-- Dev 1 -> add search bar -->
+           <script src="featureFlags.js"></script>
+           <script>
+            if (featureFlags.searchBar){
+                const input = document.createElement("input");
+                input.type = "text";
+                input.placeholder = "Search products";
+                document.body.insertBefore(input, document.body.firstChild);
+            }
+           </script>
 </body>
 </html>
