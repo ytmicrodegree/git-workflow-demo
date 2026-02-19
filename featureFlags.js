@@ -1,3 +1,3 @@
 const featureFlags = {
-    searchBar: true
+    searchBar: false
 };
